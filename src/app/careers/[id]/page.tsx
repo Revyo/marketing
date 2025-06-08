@@ -23,13 +23,14 @@ import { format } from 'date-fns'
 import { getJobById } from '@/app/actions/jobs'
 
 interface JobPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: JobPageProps): Promise<Metadata> {
-  const result = await getJobById(params.id)
+  const { id } = await params
+  const result = await getJobById(id)
   
   if (!result.success || !result.job) {
     return {
@@ -67,7 +68,8 @@ export async function generateMetadata({ params }: JobPageProps): Promise<Metada
 }
 
 export default async function JobPage({ params }: JobPageProps) {
-  const result = await getJobById(params.id)
+  const { id } = await params
+  const result = await getJobById(id)
   
   if (!result.success || !result.job) {
     notFound()
