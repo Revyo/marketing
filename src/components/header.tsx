@@ -1,15 +1,10 @@
 'use client'
 
-import { useRouter } from "next/navigation"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu"
+import { RevyoLogo } from "./revyo-logo"
+import Link from "next/link"
 
 export function Header() {
-  const router = useRouter()
-
-  const handleLogoClick = () => {
-    router.push('/')
-  }
-
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -23,15 +18,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="w-full flex h-16 items-center justify-between px-6">
         <div className="flex items-center space-x-4">
-          <div className="font-bold text-2xl text-primary pl-4" onClick={handleLogoClick} onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              handleLogoClick()
-            }
-          }}>
-            Revyo Software
-          </div>
+          <Link href="/">
+            <RevyoLogo className="text-primary" width={180} height={40} />
+          </Link>
         </div>
         
         <NavigationMenu>
