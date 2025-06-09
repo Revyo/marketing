@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -77,8 +75,6 @@ const projects: Project[] = [
 export default function Showcase() {
 	return (
 		<div className="min-h-screen bg-background">
-			<Header />
-			
 			<main className="pt-20">
 				{/* Hero Section */}
 				<section className="py-20 px-4 text-center">
@@ -250,8 +246,6 @@ export default function Showcase() {
 					</div>
 				</section>
 			</main>
-
-			<Footer />
 		</div>
 	)
 }

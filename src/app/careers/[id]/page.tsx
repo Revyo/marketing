@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -79,8 +77,6 @@ export default async function JobPage({ params }: JobPageProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
-      
       <main className="pt-16">
         {/* Breadcrumb and Back Navigation */}
         <section className="bg-white border-b">
@@ -300,8 +296,6 @@ export default async function JobPage({ params }: JobPageProps) {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   )
 } 

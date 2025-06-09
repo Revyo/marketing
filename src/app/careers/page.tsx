@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { JobCard } from "@/components/job-card";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -37,8 +35,6 @@ export default function Careers() {
 
 	return (
 		<div className="min-h-screen bg-gray-50">
-			<Header />
-
 			<main className="pt-16">
 				{/* Hero Section */}
 				<section className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-20">
@@ -221,7 +217,6 @@ export default function Careers() {
 					</div>
 				</section>
 			</main>
-			<Footer />
 		</div>
 	);
 }

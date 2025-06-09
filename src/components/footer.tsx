@@ -32,6 +32,7 @@ export function Footer() {
               <li><a href="#services" className="hover:text-foreground transition-colors">Enterprise Security</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">Government Contracts</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">Digital Transformation</a></li>
+              <li><a href="/mvp-services" className="hover:text-foreground transition-colors">MVP Services</a></li>
             </ul>
           </div>
           

@@ -3,8 +3,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Mail, MapPin, Clock } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
+import { scheduleMeeting } from "@/lib/scheduleMeeting"
 
 export function ContactSection() {
   return (
@@ -77,9 +78,7 @@ export function ContactSection() {
                 <Button
                   variant="secondary"
                   className="w-full"
-                  onClick={() => {
-                    window.open('https://calendly.com/jess-daniel/30min', '_blank')
-                  }}
+                  onClick={scheduleMeeting}
                 >
                   Schedule Consultation
                 </Button>
