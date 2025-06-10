@@ -1,6 +1,11 @@
 import { CheckCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function FAQ() {
 	return (
@@ -16,63 +21,71 @@ export default function FAQ() {
 						</h2>
 					</div>
 
-					<div className="space-y-6">
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center">
-									<CheckCircle className="h-5 w-5 mr-2 text-primary" />
-									Who owns the intellectual property and code?
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
+					<Accordion type="single" collapsible className="w-full space-y-4">
+						<AccordionItem value="item-1" className="bg-background rounded-lg border shadow-sm">
+							<AccordionTrigger className="px-6 py-4 hover:no-underline">
+								<div className="flex items-center">
+									<CheckCircle className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
+									<span className="text-left font-semibold">
+										Who owns the intellectual property and code?
+									</span>
+								</div>
+							</AccordionTrigger>
+							<AccordionContent className="px-6 pb-6">
 								<p className="text-muted-foreground">
 									You do. 100%. Upon final payment, we transfer all code and IP
 									to you.
 								</p>
-							</CardContent>
-						</Card>
+							</AccordionContent>
+						</AccordionItem>
 
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center">
-									<CheckCircle className="h-5 w-5 mr-2 text-primary" />
-									What technology stack do you use?
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
+						<AccordionItem value="item-2" className="bg-background rounded-lg border shadow-sm">
+							<AccordionTrigger className="px-6 py-4 hover:no-underline">
+								<div className="flex items-center">
+									<CheckCircle className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
+									<span className="text-left font-semibold">
+										What technology stack do you use?
+									</span>
+								</div>
+							</AccordionTrigger>
+							<AccordionContent className="px-6 pb-6">
 								<p className="text-muted-foreground">
 									We select the best stack for your project's needs, focusing on
 									scalability and performance. Our go-to technologies include
 									Next.js, React.js, Node.js, and PostgreSQL, hosted on AWS or
 									Vercel.
 								</p>
-							</CardContent>
-						</Card>
+							</AccordionContent>
+						</AccordionItem>
 
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center">
-									<CheckCircle className="h-5 w-5 mr-2 text-primary" />
-									What happens if I need more features after the MVP is built?
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
+						<AccordionItem value="item-3" className="bg-background rounded-lg border shadow-sm">
+							<AccordionTrigger className="px-6 py-4 hover:no-underline">
+								<div className="flex items-center">
+									<CheckCircle className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
+									<span className="text-left font-semibold">
+										What happens if I need more features after the MVP is built?
+									</span>
+								</div>
+							</AccordionTrigger>
+							<AccordionContent className="px-6 pb-6">
 								<p className="text-muted-foreground">
 									We'd love to be your long-term tech partner! We can transition
 									to a flexible monthly retainer or a new project-based
 									agreement to continue building out your application.
 								</p>
-							</CardContent>
-						</Card>
+							</AccordionContent>
+						</AccordionItem>
 
-						<Card>
-							<CardHeader>
-								<CardTitle className="flex items-center">
-									<CheckCircle className="h-5 w-5 mr-2 text-primary" />
-									Why is this offer so affordable?
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
+						<AccordionItem value="item-4" className="bg-background rounded-lg border shadow-sm">
+							<AccordionTrigger className="px-6 py-4 hover:no-underline">
+								<div className="flex items-center">
+									<CheckCircle className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
+									<span className="text-left font-semibold">
+										Why is this offer so affordable?
+									</span>
+								</div>
+							</AccordionTrigger>
+							<AccordionContent className="px-6 pb-6">
 								<p className="text-muted-foreground">
 									We've streamlined our process for MVPs to be incredibly
 									efficient with a combination of AI and human expertise. We're
@@ -80,9 +93,9 @@ export default function FAQ() {
 									long-term relationships with promising startups. When you
 									succeed, we succeed.
 								</p>
-							</CardContent>
-						</Card>
-					</div>
+							</AccordionContent>
+						</AccordionItem>
+					</Accordion>
 				</div>
 			</div>
 		</section>

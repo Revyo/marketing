@@ -1,10 +1,11 @@
 "use client";
 
 import { scheduleMeeting } from "@/lib/scheduleMeeting";
-import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
-import { Card } from "../ui/card";
-import { ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { ArrowRight, Clock, DollarSign, Star, Zap } from "lucide-react";
 
 export default function Offer() {
 	return (
@@ -24,30 +25,73 @@ export default function Offer() {
 						rate.
 					</p>
 
-					<Card className="p-8 mb-8 bg-gradient-to-br from-primary/5 to-background border-2 border-primary/20">
-						<div className="mb-4">
-							<span className="text-4xl md:text-5xl font-bold text-primary">
-								Founder's Launchpad Offer: $18,000
-							</span>
-						</div>
-						<p className="text-lg text-muted-foreground mb-6">
-							A one-time investment to launch your startup
-						</p>
-						<Badge variant="destructive" className="text-lg px-4 py-2">
-							Limited number of packages available
-						</Badge>
-					</Card>
+					<Card className="max-w-2xl mx-auto bg-gradient-to-br from-primary/5 via-background to-primary/5 border-2 border-primary/20 shadow-lg">
+						<CardHeader className="text-center pb-4">
+							<div className="flex items-center justify-center gap-2 mb-4">
+								<Star className="h-6 w-6 text-yellow-500 fill-current" />
+								<Badge variant="secondary" className="text-sm font-semibold">
+									FOUNDER'S SPECIAL
+								</Badge>
+								<Star className="h-6 w-6 text-yellow-500 fill-current" />
+							</div>
+							<CardTitle className="text-2xl md:text-3xl font-bold text-primary mb-2">
+								MVP Launchpad Package
+							</CardTitle>
+							<CardDescription className="text-base text-muted-foreground">
+								Everything you need to launch your startup
+							</CardDescription>
+						</CardHeader>
 
-					<div className="space-y-4">
-						<Button
-							size="lg"
-							className="text-lg px-8"
-							onClick={scheduleMeeting}
-						>
-							Book a Call to Learn More
-							<ArrowRight className="ml-2 h-5 w-5 cursor-pointer" />
-						</Button>
-					</div>
+						<Separator className="mx-6" />
+
+						<CardContent className="pt-6">
+							<div className="text-center mb-6">
+								<div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+									$18,000
+								</div>
+								<p className="text-muted-foreground">
+									One-time investment • No hidden fees
+								</p>
+							</div>
+
+							<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+								<div className="flex items-center gap-2 p-3 bg-background/50 rounded-lg border">
+									<Clock className="h-4 w-4 text-primary flex-shrink-0" />
+									<span className="text-sm font-medium">90-Day Delivery</span>
+								</div>
+								<div className="flex items-center gap-2 p-3 bg-background/50 rounded-lg border">
+									<DollarSign className="h-4 w-4 text-primary flex-shrink-0" />
+									<span className="text-sm font-medium">Fixed Price</span>
+								</div>
+								<div className="flex items-center gap-2 p-3 bg-background/50 rounded-lg border">
+									<Zap className="h-4 w-4 text-primary flex-shrink-0" />
+									<span className="text-sm font-medium">Full Ownership</span>
+								</div>
+							</div>
+
+							<div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4 mb-6">
+								<div className="flex items-center gap-2 justify-center">
+									<Clock className="h-4 w-4 text-destructive" />
+									<Badge variant="destructive" className="text-sm font-semibold">
+										LIMITED AVAILABILITY
+									</Badge>
+								</div>
+							</div>
+
+							<Button
+								size="lg"
+								className="w-full text-lg py-6 cursor-pointer"
+								onClick={scheduleMeeting}
+							>
+								Book Your Free Strategy Call
+								<ArrowRight className="ml-2 h-5 w-5" />
+							</Button>
+							
+							<p className="text-xs text-muted-foreground mt-3 text-center">
+								30-minute call • No commitment required • Free MVP blueprint
+							</p>
+						</CardContent>
+					</Card>
 				</div>
 			</div>
 		</section>
