@@ -23,7 +23,7 @@ export default function HeroSection() {
 
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
 						Turn Your Big Idea into a{" "}
-						<span className="text-primary">Market-Ready MVP</span> in 90 Days
+						<span className="text-primary">Market-Ready MVP</span> in 30 Days
 					</h1>
 
 					<p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">

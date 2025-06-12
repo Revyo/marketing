@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 		template: "%s | Revyo Software",
 	},
 	description:
-		"Professional software consulting services for startups and government clients. Custom development, system integration, and digital transformation solutions.",
+		"Professional software consulting services for startups and local businesses. Custom development, system integration, and digital transformation solutions.",
 	keywords: [
 		"software consulting",
 		"custom development",
 		"enterprise solutions",
-		"government contracts",
+		"local businesses",
 		"digital transformation",
 		"system integration",
 		"web applications",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 		siteName: "Revyo Software",
 		title: "Revyo Software - Expert Software Consulting",
 		description:
-			"Professional software consulting services for startups and government clients. Custom development, system integration, and digital transformation solutions.",
+			"Professional software consulting services for startups and local businesses. Custom development, system integration, and digital transformation solutions.",
 		images: [
 			{
 				url: "/og-image.jpg",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Revyo Software - Expert Software Consulting",
 		description:
-			"Professional software consulting services for startups and government clients.",
+			"Professional software consulting services for startups and local businesses.",
 		images: ["/og-image.jpg"],
 		creator: "@revyosoftware",
 	},

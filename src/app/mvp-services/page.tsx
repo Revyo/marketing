@@ -9,8 +9,8 @@ import FAQ from "@/components/mvp-services/faq";
 import CTA from "@/components/mvp-services/cta";
 
 export const metadata: Metadata = {
-	title: "MVP Development Services - Launch Your Startup in 90 Days | Revyo Software",
-	description: "Turn your big idea into a market-ready MVP in 90 days. Fixed-price MVP development package for ambitious founders. Get your startup to market fast with our expert team.",
+	title: "MVP Development Services - Launch Your Startup in 30 Days | Revyo Software",
+	description: "Turn your big idea into a market-ready MVP in 30 Days. Fixed-price MVP development package for ambitious founders. Get your startup to market fast with our expert team.",
 	keywords: [
 		"MVP development",
 		"startup MVP services",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 		canonical: "https://revyosoftware.com/mvp-services"
 	},
 	openGraph: {
-		title: "MVP Development Services - Launch Your Startup in 90 Days | Revyo Software",
-		description: "Turn your big idea into a market-ready MVP in 90 days. Fixed-price development package for ambitious founders starting at $18,000.",
+		title: "MVP Development Services - Launch Your Startup in 30 Days | Revyo Software",
+		description: "Turn your big idea into a market-ready MVP in 30 Days. Fixed-price development package for ambitious founders starting at $18,000.",
 		url: "https://revyosoftware.com/mvp-services",
 		type: "website",
 		images: [
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
 				url: "/og-mvp-services.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Revyo Software MVP Development Services - Launch Your Startup in 90 Days"
+				alt: "Revyo Software MVP Development Services - Launch Your Startup in 30 Days"
 			}
 		]
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "MVP Development Services - Launch Your Startup in 90 Days",
-		description: "Turn your big idea into a market-ready MVP in 90 days. Fixed-price development package for ambitious founders.",
+		title: "MVP Development Services - Launch Your Startup in 30 Days",
+		description: "Turn your big idea into a market-ready MVP in 30 Days. Fixed-price development package for ambitious founders.",
 		images: ["/og-mvp-services.jpg"]
 	}
 }

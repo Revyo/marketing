@@ -73,7 +73,7 @@ export function HeroSection() {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We deliver custom software solutions for startups and government clients, 
+            We deliver custom software solutions for startups and local businesses, 
             specializing in system integration, digital transformation, and enterprise-grade applications.
           </p>
           

@@ -6,12 +6,12 @@ import { ContactSection } from "@/components/contact-section"
 
 export const metadata: Metadata = {
 	title: "Expert Software Consulting Services | Revyo Software",
-	description: "Professional software consulting for startups and government clients. Custom development, system integration, enterprise security, and digital transformation solutions.",
+	description: "Professional software consulting for startups and local businesses. Custom development, system integration, enterprise security, and digital transformation solutions.",
 	keywords: [
 		"software consulting services",
 		"custom software development",
 		"enterprise solutions",
-		"government software contracts",
+		"local business software",
 		"system integration services",
 		"digital transformation consulting",
 		"enterprise security solutions",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: "Expert Software Consulting Services | Revyo Software",
-		description: "Professional software consulting for startups and government clients. Custom development, system integration, and digital transformation.",
+		description: "Professional software consulting for startups and local businesses. Custom development, system integration, and digital transformation.",
 		url: "https://revyosoftware.com",
 		type: "website",
 		images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Expert Software Consulting Services | Revyo Software",
-		description: "Professional software consulting for startups and government clients.",
+		description: "Professional software consulting for startups and local businesses.",
 		images: ["/og-image.jpg"]
 	}
 }

@@ -45,7 +45,7 @@ export default function Careers() {
 							</h1>
 							<p className="text-xl md:text-2xl mb-8 text-blue-100">
 								Join our team of talented professionals working on cutting-edge
-								software solutions for startups and government clients.
+								software solutions for startups and local businesses.
 							</p>
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
 								<div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

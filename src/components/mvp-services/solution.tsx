@@ -28,7 +28,7 @@ export default function Solution() {
 								<Zap className="h-8 w-8 text-primary" />
 							</div>
 							<h3 className="font-semibold mb-2">Speed to Market</h3>
-							<p className="text-muted-foreground">Launch in 90 days.</p>
+							<p className="text-muted-foreground">Launch in 30 Days.</p>
 						</div>
 
 						<div className="text-center">

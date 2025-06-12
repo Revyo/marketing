@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
 	title: "Project Showcase | Revyo Software",
-	description: "Explore our portfolio of successful software projects delivered for startups and government clients. See our expertise in custom development, system integration, and digital solutions.",
+	description: "Explore our portfolio of successful software projects delivered for startups and local businesses. See our expertise in custom development, system integration, and digital solutions.",
 	keywords: [
 		"software portfolio",
 		"project showcase",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: "Project Showcase | Revyo Software",
-		description: "Explore our portfolio of successful software projects delivered for startups and government clients.",
+		description: "Explore our portfolio of successful software projects delivered for startups and local businesses.",
 		url: "https://revyosoftware.com/showcase",
 		type: "website",
 		images: [
@@ -40,7 +40,7 @@ interface Project {
 	description: string
 	longDescription: string
 	technologies: string[]
-	category: "Enterprise" | "Government" | "Startup" | "E-commerce" | "Healthcare"
+	category: "Enterprise" | "Startup" | "E-commerce" | "Healthcare"
 	industry: string
 	timeline: string
 	image: string

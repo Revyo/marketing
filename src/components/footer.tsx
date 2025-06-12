@@ -19,7 +19,7 @@ export function Footer() {
               Revyo Software
             </div>
             <p className="text-muted-foreground text-sm">
-              Expert software consulting services for startups and government clients. 
+              Expert software consulting services for startups and local businesses. 
               Custom development, system integration, and digital transformation solutions.
             </p>
           </div>
@@ -30,7 +30,7 @@ export function Footer() {
               <li><a href="#services" className="hover:text-foreground transition-colors">Custom Development</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">System Integration</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">Enterprise Security</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Government Contracts</a></li>
+              <li><a href="#services" className="hover:text-foreground transition-colors">AI Solutions</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">Digital Transformation</a></li>
               <li><a href="/mvp-services" className="hover:text-foreground transition-colors">MVP Services</a></li>
             </ul>

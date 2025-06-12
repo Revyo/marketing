@@ -23,9 +23,9 @@ const services = [
   },
   {
     icon: Users,
-    title: "Government Contracts",
-    description: "Specialized services for local government agencies with deep understanding of public sector needs.",
-    features: ["Compliance Standards", "Public Data Systems", "Citizen Services", "Reporting Solutions"]
+    title: "AI Solutions",
+    description: "Cutting-edge artificial intelligence and machine learning solutions to automate and enhance your business processes.",
+    features: ["Private LLMs", "Retrieval Augmented Generation", "Vector Embeddings", "Semantic Search"]
   },
   {
     icon: Zap,
@@ -52,7 +52,7 @@ export function ServicesSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             From concept to deployment, we provide end-to-end software consulting services 
-            tailored to startups and government clients.
+            tailored to startups and local businesses.
           </p>
         </div>
         

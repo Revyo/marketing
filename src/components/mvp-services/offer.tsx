@@ -20,7 +20,7 @@ export default function Offer() {
 					</h2>
 					<p className="text-lg text-muted-foreground mb-8">
 						Building a custom MVP of this quality typically costs upwards of
-						$30,000. To help the next wave of innovators get off the ground,
+						$20,000. To help the next wave of innovators get off the ground,
 						we're offering a limited number of Launchpad packages at a special
 						rate.
 					</p>
@@ -47,7 +47,7 @@ export default function Offer() {
 						<CardContent className="pt-6">
 							<div className="text-center mb-6">
 								<div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-									$18,000
+									$4,999
 								</div>
 								<p className="text-muted-foreground">
 									One-time investment • No hidden fees
@@ -57,7 +57,7 @@ export default function Offer() {
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 								<div className="flex items-center gap-2 p-3 bg-background/50 rounded-lg border">
 									<Clock className="h-4 w-4 text-primary flex-shrink-0" />
-									<span className="text-sm font-medium">90-Day Delivery</span>
+									<span className="text-sm font-medium">30-Day Delivery</span>
 								</div>
 								<div className="flex items-center gap-2 p-3 bg-background/50 rounded-lg border">
 									<DollarSign className="h-4 w-4 text-primary flex-shrink-0" />

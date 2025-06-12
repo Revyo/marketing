@@ -14,7 +14,7 @@ export function AboutSection() {
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               At Revyo Software, we specialize in delivering enterprise-grade software solutions 
-              that drive digital transformation for startups and government agencies. Our team 
+              that drive digital transformation for startups and local businesses. Our team 
               of experienced developers and consultants brings deep technical expertise and industry 
               knowledge to every project.
             </p>
