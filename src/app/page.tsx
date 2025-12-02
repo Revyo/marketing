@@ -1,28 +1,30 @@
 import type { Metadata } from "next"
 import { HeroSection } from "@/components/hero-section"
-import { ServicesSection } from "@/components/services-section"
+import { HowItWorks } from "@/components/how-it-works"
+import { UseCases } from "@/components/use-cases"
+import { PartnershipModel } from "@/components/partnership-model"
 import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 
 export const metadata: Metadata = {
-	title: "Expert Software Consulting Services | Revyo Software",
-	description: "Professional software consulting for startups and local businesses. Custom development, system integration, enterprise security, and digital transformation solutions.",
+	title: "AI Automation Agency & Consultants | Revyo Software",
+	description: "We turn manual, repetitive processes into AI-driven workflows. Custom AI agents, automation tools, and fractional AI Ops for growing businesses.",
 	keywords: [
-		"software consulting services",
-		"custom software development",
-		"enterprise solutions",
-		"local business software",
-		"system integration services",
-		"digital transformation consulting",
-		"enterprise security solutions",
-		"software development"
+		"AI automation agency",
+		"AI operations",
+		"custom AI agents",
+		"business process automation",
+		"AI consulting",
+		"workflow automation",
+		"fractional AI team",
+		"software consulting"
 	],
 	alternates: {
 		canonical: "https://revyosoftware.com"
 	},
 	openGraph: {
-		title: "Expert Software Consulting Services | Revyo Software",
-		description: "Professional software consulting for startups and local businesses. Custom development, system integration, and digital transformation.",
+		title: "AI Automation Agency | Revyo Software",
+		description: "We turn manual, repetitive processes into AI-driven workflows. Custom AI agents and automation tools.",
 		url: "https://revyosoftware.com",
 		type: "website",
 		images: [
@@ -30,14 +32,14 @@ export const metadata: Metadata = {
 				url: "/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Revyo Software - Expert Software Consulting Services"
+				alt: "Revyo Software - AI Automation Agency"
 			}
 		]
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Expert Software Consulting Services | Revyo Software",
-		description: "Professional software consulting for startups and local businesses.",
+		title: "AI Automation Agency | Revyo Software",
+		description: "We turn manual, repetitive processes into AI-driven workflows.",
 		images: ["/og-image.jpg"]
 	}
 }
@@ -47,7 +49,9 @@ export default function Home() {
 		<div className="min-h-screen">
 			<main>
 				<HeroSection />
-				<ServicesSection />
+				<HowItWorks />
+				<UseCases />
+				<PartnershipModel />
 				<AboutSection />
 				<ContactSection />
 			</main>

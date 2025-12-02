@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu } from "lucide-react"
 import { RevyoLogo } from "./revyo-logo"
 import Link from "next/link"
 
@@ -28,15 +28,14 @@ export function Header() {
   }
 
   const navItems = [
-    { href: "#services", label: "Services", id: "services" },
+    { href: "#process", label: "Process", id: "process" },
     { href: "#about", label: "About", id: "about" },
-    { href: "/showcase", label: "Showcase" },
     { href: "#contact", label: "Contact", id: "contact" },
   ]
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="w-full flex h-16 items-center justify-between px-6">
+      <div className="w-full flex h-16 items-center justify-between px-6 container mx-auto">
         <div className="flex items-center space-x-4">
           <Link href="/">
             <RevyoLogo className="text-primary" width={180} height={40} />
@@ -92,4 +91,4 @@ export function Header() {
       </div>
     </header>
   )
-} 
+}

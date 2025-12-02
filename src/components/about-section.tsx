@@ -1,100 +1,85 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Target, Users, Award } from "lucide-react"
+import { Terminal, Cpu, GitBranch, Layers } from "lucide-react"
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Badge variant="outline" className="mb-4">About Revyo Software</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Your Trusted Partner in Software Innovation
+            <Badge variant="outline" className="mb-4">Who We Are</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+              Engineers, Not Just Consultants
             </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              We are a technical team focused on one thing: <b>Automation ROI</b>. 
+              We don't sell slide decks or vague strategies. We build, deploy, and maintain 
+              systems that do the work for you.
+            </p>
             <p className="text-lg text-muted-foreground mb-8">
-              At Revyo Software, we specialize in delivering enterprise-grade software solutions 
-              that drive digital transformation for startups and local businesses. Our team 
-              of experienced developers and consultants brings deep technical expertise and industry 
-              knowledge to every project.
+              Led by experienced software engineers, Revyo Software bridges the gap between 
+              complex AI capabilities and practical business needs. We speak API, 
+              but we measure success in hours saved and dollars earned.
             </p>
             
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">Proven Expertise</h3>
-                  <p className="text-muted-foreground">
-                    Years of experience delivering complex software solutions across various industries and sectors.
-                  </p>
+            <div className="grid grid-cols-2 gap-4">
+                <div className="bg-muted/30 p-4 rounded-lg border border-border/50">
+                    <h4 className="font-bold text-2xl mb-1 text-primary">100%</h4>
+                    <p className="text-sm text-muted-foreground">Focused on Execution</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">Client-Centric Approach</h3>
-                  <p className="text-muted-foreground">
-                    We work closely with our clients to understand their unique needs and deliver tailored solutions.
-                  </p>
+                <div className="bg-muted/30 p-4 rounded-lg border border-border/50">
+                    <h4 className="font-bold text-2xl mb-1 text-primary">0%</h4>
+                    <p className="text-sm text-muted-foreground">Outsourcing</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">Quality Assurance</h3>
-                  <p className="text-muted-foreground">
-                    Rigorous testing and quality control processes ensure reliable, secure, and scalable solutions.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Card className="text-center p-6">
+            <Card className="p-6 border-border/60">
               <CardContent className="pt-0">
-                <div className="p-3 bg-primary/10 rounded-lg w-fit mx-auto mb-4">
-                  <Target className="h-8 w-8 text-primary" />
+                <div className="p-3 bg-background rounded-lg w-fit border border-border mb-4">
+                  <Terminal className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Strategic Focus</h3>
+                <h3 className="font-bold text-lg mb-2">Code-First Approach</h3>
                 <p className="text-muted-foreground text-sm">
-                  We align technology solutions with your business objectives for maximum impact.
+                  We build robust, scalable integrations using code, not just fragile no-code zapier glues.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="text-center p-6">
+            <Card className="p-6 border-border/60">
               <CardContent className="pt-0">
-                <div className="p-3 bg-primary/10 rounded-lg w-fit mx-auto mb-4">
-                  <Users className="h-8 w-8 text-primary" />
+                <div className="p-3 bg-background rounded-lg w-fit border border-border mb-4">
+                  <Cpu className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Expert Team</h3>
+                <h3 className="font-bold text-lg mb-2">Model Agnostic</h3>
                 <p className="text-muted-foreground text-sm">
-                  Certified professionals with extensive experience in enterprise software development.
+                  We use the best AI model for the job—whether it's GPT-4, Claude, or a local open-source model.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="text-center p-6">
+            <Card className="p-6 border-border/60">
               <CardContent className="pt-0">
-                <div className="p-3 bg-primary/10 rounded-lg w-fit mx-auto mb-4">
-                  <Award className="h-8 w-8 text-primary" />
+                <div className="p-3 bg-background rounded-lg w-fit border border-border mb-4">
+                  <GitBranch className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Quality Standards</h3>
+                <h3 className="font-bold text-lg mb-2">Version Controlled</h3>
                 <p className="text-muted-foreground text-sm">
-                  Adherence to industry best practices and compliance requirements.
+                  Your business logic is treated like software: versioned, tested, and safely deployed.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="text-center p-6">
+            <Card className="p-6 border-border/60">
               <CardContent className="pt-0">
-                <div className="p-3 bg-primary/10 rounded-lg w-fit mx-auto mb-4">
-                  <CheckCircle className="h-8 w-8 text-primary" />
+                <div className="p-3 bg-background rounded-lg w-fit border border-border mb-4">
+                  <Layers className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Proven Results</h3>
+                <h3 className="font-bold text-lg mb-2">Full Stack</h3>
                 <p className="text-muted-foreground text-sm">
-                  Track record of successful project delivery and satisfied clients.
+                  From the database to the frontend, we handle the entire technical stack.
                 </p>
               </CardContent>
             </Card>
@@ -103,4 +88,4 @@ export function AboutSection() {
       </div>
     </section>
   )
-} 
+}

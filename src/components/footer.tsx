@@ -19,20 +19,18 @@ export function Footer() {
               Revyo Software
             </div>
             <p className="text-muted-foreground text-sm">
-              Expert software consulting services for startups and local businesses. 
-              Custom development, system integration, and digital transformation solutions.
+              Your AI automation partner. We design, build, and maintain intelligent systems 
+              that help businesses scale without adding headcount.
             </p>
           </div>
           
           <div className="space-y-4">
             <h3 className="font-semibold">Services</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#services" className="hover:text-foreground transition-colors">Custom Development</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">System Integration</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Enterprise Security</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">AI Solutions</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Digital Transformation</a></li>
-              <li><a href="/mvp-services" className="hover:text-foreground transition-colors">MVP Services</a></li>
+              <li><a href="#process" className="hover:text-foreground transition-colors">Workflow Audit</a></li>
+              <li><a href="#process" className="hover:text-foreground transition-colors">Custom AI Agents</a></li>
+              <li><a href="#process" className="hover:text-foreground transition-colors">Process Automation</a></li>
+              <li><a href="#process" className="hover:text-foreground transition-colors">AI Ops Retainer</a></li>
             </ul>
           </div>
           
@@ -41,7 +39,6 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#about" className="hover:text-foreground transition-colors">About Us</a></li>
               <li><a href="#contact" className="hover:text-foreground transition-colors">Contact</a></li>
-              <li><a href="/showcase" className="hover:text-foreground transition-colors">Showcase</a></li>
               <li><span className="hover:text-foreground transition-colors cursor-pointer" onClick={handleCareersClick} onKeyDown={handleCareersClick}>Careers</span></li>
             </ul>
           </div>
@@ -64,4 +61,4 @@ export function Footer() {
       </div>
     </footer>
   )
-} 
+}
