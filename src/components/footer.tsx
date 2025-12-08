@@ -39,6 +39,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#about" className="hover:text-foreground transition-colors">About Us</a></li>
               <li><a href="#contact" className="hover:text-foreground transition-colors">Contact</a></li>
+              <li><a href="/partners" className="hover:text-foreground transition-colors">Partners</a></li>
               <li><span className="hover:text-foreground transition-colors cursor-pointer" onClick={handleCareersClick} onKeyDown={handleCareersClick}>Careers</span></li>
             </ul>
           </div>

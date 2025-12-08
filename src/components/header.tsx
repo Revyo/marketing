@@ -7,30 +7,45 @@ import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { RevyoLogo } from "./revyo-logo"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault()
+  const handleSmoothScroll = (targetId: string) => {
     const element = document.getElementById(targetId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
-    }
+    if (!element) return
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
   }
 
-  const handleMobileNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    handleSmoothScroll(e, targetId)
-    setIsOpen(false) // Close mobile menu after navigation
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId?: string) => {
+    if (!targetId) {
+      setIsOpen(false)
+      return
+    }
+
+    if (pathname === '/') {
+      e.preventDefault()
+      handleSmoothScroll(targetId)
+      setIsOpen(false)
+      return
+    }
+
+    e.preventDefault()
+    router.push(`/#${targetId}`)
+    setIsOpen(false)
   }
 
   const navItems = [
-    { href: "#process", label: "Process", id: "process" },
-    { href: "#about", label: "About", id: "about" },
-    { href: "#contact", label: "Contact", id: "contact" },
+    { href: "/#process", label: "Process", id: "process" },
+    { href: "/#about", label: "About", id: "about" },
+    { href: "/#contact", label: "Contact", id: "contact" },
+    { href: "/partners", label: "Partners" },
   ]
 
   return (
@@ -49,7 +64,7 @@ export function Header() {
               <NavigationMenuItem key={item.label}>
                 <NavigationMenuLink 
                   href={item.href}
-                  onClick={item.id ? (e) => handleSmoothScroll(e, item.id) : undefined}
+                  onClick={(e) => handleNavClick(e, item.id)}
                   className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 >
                   {item.label}
@@ -79,7 +94,7 @@ export function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  onClick={item.id ? (e) => handleMobileNavClick(e, item.id) : () => setIsOpen(false)}
+                  onClick={(e) => handleNavClick(e, item.id)}
                   className="block px-4 py-3 text-lg font-medium rounded-md transition-colors hover:bg-accent hover:text-accent-foreground"
                 >
                   {item.label}
